@@ -203,9 +203,9 @@
     var List = $('#tdlApp ul');
     var Mask = 'tdl_';
     let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
-    document.getElementById("testTg").innerHTML = JSON.stringify(tg.initDataUnsafe)
-    // const queryString = window.location.search;
-    // console.log(queryString);
+    // document.getElementById("testTg").innerHTML = JSON.stringify(tg)
+    const queryString = window.location.search;
+    document.getElementById("testTg").innerHTML = queryString
     // function showTasks() {
     //     // Узнаём размер хранилища
     //     var Storage_size = localStorage.length;
