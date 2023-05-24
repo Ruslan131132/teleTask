@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
     <style type="text/css">
         body {
             text-align: center;
@@ -180,6 +181,7 @@
 <body>
 {{--<h2 class="todo__caption">Список задач</h2>--}}
 <div id="tdlApp">
+    <div id="testTg"></div>
     <input type="text" class="form-control" placeholder="Текст новой задачи">
 
     <div class="scrollmenu">
@@ -200,6 +202,8 @@
 <script>
     var List = $('#tdlApp ul');
     var Mask = 'tdl_';
+    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+    document.getElementById("testTg").innerHTML = JSON.encode(tg.initDataUnsafe)
     // function showTasks() {
     //     // Узнаём размер хранилища
     //     var Storage_size = localStorage.length;
