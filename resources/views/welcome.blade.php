@@ -206,7 +206,7 @@
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    document.getElementById("testTg").innerHTML = JSON.stringify(urlParams)
+    document.getElementById("testTg").innerHTML = queryString
     // function showTasks() {
     //     // Узнаём размер хранилища
     //     var Storage_size = localStorage.length;
