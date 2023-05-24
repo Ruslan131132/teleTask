@@ -203,7 +203,7 @@
     var List = $('#tdlApp ul');
     var Mask = 'tdl_';
     let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
-    document.getElementById("testTg").innerHTML = JSON.stringify(tg.initData)
+    document.getElementById("testTg").innerHTML = JSON.stringify(tg.initDataUnsafe)
     // const queryString = window.location.search;
     // console.log(queryString);
     // function showTasks() {
